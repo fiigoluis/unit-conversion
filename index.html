@@ -7,8 +7,81 @@
     <title>Unit Converter</title>
 </head>
 <body>
-    
 
+    <main>
+        <!--App Header-->
+        <section class="app-container" id="conversion-header">
+            <!--Header container-->
+            <section id="header-container">
+                <div id="my-profile">
+                    <img src="./my image .jpg" alt="My Profile Picture" id="profile-picture">
+                    <p id="profile-name">Luis Eichie</p>
+                </div>
+                <p id="app-title">Metric Unit Converter</p>
+            </section>
+
+           <!--Divider-->
+            <div class="app-container" id="divider">
+
+            </div>
+
+            <!--Conversion Section-->
+            <section id="conversion-items">
+
+                <!--Top Result-->
+                <div class="result-container" id="top-result">
+                    <p class="label" id="top-label">Feet</p>
+                    <div class="result" id="top-result">
+                        <output id="top-output">0.00</output>
+                        <p class="unit" id="top-unit">m</p>
+                    </div>
+                </div>
+
+                <!--Bottom Result-->
+                <div class="result-container" id="bottom-result">
+                    <p class="label" id="bottom-label">Meters</p>
+                    <div class="result" id="bottom-result">
+                        <output id="bottom-output">0.00</output>
+                        <p class="unit" id="bottom-unit">ft</p>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+
+        <!--Divider-->
+        <div class="app-container" id="divider">
+
+        </div>
+
+        <!--App Body-->
+        <section class="app-container" id="conversion-body">
+
+             <!--Input Section-->
+            <section id="input-section">
+
+             <!--User Input-->
+             <input id="enter-value" placeholder="Enter value">
+ 
+             <!--Metric Control-->
+             <section id="metric-tabs">
+                <button class="metric-control" id="length">length</button>
+
+                <button class="metric-control" id="volume">volume</button>
+
+                <button class="metric-control" id="mass">mass</button>
+             </section>
+
+            </section>
+
+             <!--Call to Action-->
+             <button class="convert">Convert</button>
+
+            
+        </section>
+    </main>
+    
     <script src="index.js"></script>
 </body>
 </html>
