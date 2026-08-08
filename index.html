@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>Unit Converter</title>
 </head>
 <body>
@@ -32,7 +35,7 @@
                 <div class="result-container" id="top-result">
                     <p class="label" id="top-label">Feet</p>
                     <div class="result" id="top-result">
-                        <output id="top-output">0.00</output>
+                        <output class="output-num" id="top-output">0.00</output>
                         <p class="unit" id="top-unit">m</p>
                     </div>
                 </div>
@@ -41,7 +44,7 @@
                 <div class="result-container" id="bottom-result">
                     <p class="label" id="bottom-label">Meters</p>
                     <div class="result" id="bottom-result">
-                        <output id="bottom-output">0.00</output>
+                        <output class="output-num" id="bottom-output">0.00</output>
                         <p class="unit" id="bottom-unit">ft</p>
                     </div>
                 </div>
@@ -52,7 +55,6 @@
 
         <!--Divider-->
         <div class="app-container" id="divider">
-
         </div>
 
         <!--App Body-->
@@ -61,17 +63,20 @@
              <!--Input Section-->
             <section id="input-section">
 
-             <!--User Input-->
-             <input id="enter-value" placeholder="Enter value">
- 
-             <!--Metric Control-->
-             <section id="metric-tabs">
-                <button class="metric-control" id="length">length</button>
+                <!--User Input-->
+                <input id="enter-value" placeholder="Enter value">
+    
+                <!--Metric Control-->
+                <section id="metric-tabs">
+                    <p class="label">Metric</p>
+                    <section id="button-tabs">
+                        <button class="metric-control" id="length">length</button>
 
-                <button class="metric-control" id="volume">volume</button>
+                        <button class="metric-control" id="volume">volume</button>
 
-                <button class="metric-control" id="mass">mass</button>
-             </section>
+                        <button class="metric-control" id="mass">mass</button>
+                    </section>
+                </section>
 
             </section>
 
