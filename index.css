@@ -126,6 +126,7 @@ main {
     gap: 12px;
     color: #F3F4F6;
     width: 100%;
+    overflow: hidden;
 }
 
 .result-container {
@@ -133,6 +134,7 @@ main {
     display: flex;
     padding: 12px;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 
@@ -152,7 +154,6 @@ main {
     font-size: 40px;
     color: #F59E0B;
     line-height: 100%;
-    font-size: 400;
 }
 
 .unit {
@@ -192,6 +193,7 @@ main {
     border-radius: 8px;
     border: 1px solid #4B5563;
     background-color: #374151;
+    color: #F3F4F6dd;
 }
 
 #enter-value::placeholder{
@@ -207,30 +209,54 @@ main {
 }
 
 #button-tabs {
+    position: relative;
     display: flex;
-    gap: 0;
     background-color:#374151;
     border-radius: 12px;
     overflow: hidden;
 }
 
 .metric-control {
+    position: relative;
+    z-index: 1;
+
+    flex: 1;
     margin: 0;
     border: none;
     width: 100%;
     padding: 15px 10px;
+   
     background-color: transparent;
     color: #F3F4F6;
+
+    cursor: pointer;
 }
 
-#length {
-    background-color: #F3F4F6;
+
+.metric-control.active {
     color: #1F2937;
 }
 
+.active-indicator {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 33.3333%;
+
+    background-color: #F3F4F6;
+    border-radius: 12px;
+
+    transition: transform 0.3s ease;
+}
+
+
+
+
 /* Button */
 
-.convert {
+#convert {
     display: flex;
     padding: 18px 32px;
     background-color: #0284C7;

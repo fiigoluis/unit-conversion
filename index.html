@@ -33,8 +33,8 @@
 
                 <!--Top Result-->
                 <div class="result-container" id="top-result">
-                    <p class="label" id="top-label">Feet</p>
-                    <div class="result" id="top-result">
+                    <p class="label" id="top-label">Meter</p>
+                    <div class="result" id="top-result-value">
                         <output class="output-num" id="top-output">0.00</output>
                         <p class="unit" id="top-unit">m</p>
                     </div>
@@ -42,8 +42,8 @@
 
                 <!--Bottom Result-->
                 <div class="result-container" id="bottom-result">
-                    <p class="label" id="bottom-label">Meters</p>
-                    <div class="result" id="bottom-result">
+                    <p class="label" id="bottom-label">Feet</p>
+                    <div class="result" id="bottom-result-value">
                         <output class="output-num" id="bottom-output">0.00</output>
                         <p class="unit" id="bottom-unit">ft</p>
                     </div>
@@ -64,24 +64,25 @@
             <section id="input-section">
 
                 <!--User Input-->
-                <input id="enter-value" placeholder="Enter value">
+                <input id="enter-value" type="number" placeholder="Enter value">
     
                 <!--Metric Control-->
                 <section id="metric-tabs">
                     <p class="label">Metric</p>
                     <section id="button-tabs">
-                        <button class="metric-control" id="length">length</button>
+                         <div class="active-indicator"></div>
+                        <button class="metric-control active" id="length" type="button">length</button>
 
-                        <button class="metric-control" id="volume">volume</button>
+                        <button class="metric-control" id="volume" type="button">volume</button>
 
-                        <button class="metric-control" id="mass">mass</button>
+                        <button class="metric-control" id="mass" type="button">mass</button>
                     </section>
                 </section>
 
             </section>
 
              <!--Call to Action-->
-             <button class="convert">Convert</button>
+             <button id="convert" type="button">Convert</button>
 
             
         </section>
